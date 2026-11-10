@@ -24,25 +24,30 @@ PatchBounty AI bridges the gap between automated security vulnerability detectio
 
 ---
 
-##  Architecture & Workflow
+## 🏗️ Architecture & Workflow
 
-[ Security Patch Submission ]
-│
-▼
-┌──────────────────────────┐
-│  React / Vite Dashboard  │
-└────────────┬─────────────┘
-│ (HTTP POST /api/audit)
-▼
-┌──────────────────────────┐
-│   Node.js / Express App  │
-└─────┬──────────────┬─────┘
-│              │
-▼              ▼
-┌──────────┐   ┌────────────────────────┐
-│ Gemini   │   │ PayPal Server SDK      │
-│ AI Model │   │ (Sandbox Payout Engine)│
-└──────────┘   └────────────────────────┘
+```text
+               [ Security Patch Submission ]
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │   React / Vite Dashboard    │
+              └──────────────┬──────────────┘
+                             │
+                  (HTTP POST /api/audit)
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │    Node.js / Express App    │
+              └──────┬───────────────┬──────┘
+                     │               │
+                     ▼               ▼
+      ┌──────────────────┐       ┌───────────────────────┐
+      │  Google Gemini   │       │   PayPal Server SDK   │
+      │  AI Audit Model  │       │ (Sandbox Payout Engine)│
+      └──────────────────┘       └───────────────────────┘
+
+ 
 
 ---
 
