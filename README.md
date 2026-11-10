@@ -24,7 +24,7 @@ PatchBounty AI bridges the gap between automated security vulnerability detectio
 
 ---
 
-## 🏗️ Architecture & Workflow
+##  Architecture & Workflow
 
 ```text
                [ Security Patch Submission ]
@@ -111,13 +111,3 @@ npm run dev
 Distributed under the MIT License. See LICENSE for details.
 
 
----
-
-### Push your updated README to GitHub
-
-Run these commands in your VS Code terminal at `C:\Users\Admin\patchbounty-ai`:
-
-```powershell
-git add README.md
-git commit -m "Docs: Complete README with architecture diagram and run instructions"
-git push origin main
